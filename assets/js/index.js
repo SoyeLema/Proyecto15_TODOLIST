@@ -36,8 +36,8 @@ function renderList() {
     <tr class="list">
         <td class="identif">${task.id}</td>
         <td class="descr">${task.name}</td>
-        <td class="realiz"><i class="fa-regular fa-square" onclick="check(${task.id})"></i></td>
-        <td class="eliminar"><i class="fa-solid fa-x" onclick="borrar(${task.id})"></i></td>
+        <td class="realiz"><i class="fa-regular fa-square" id="boxx" onclick="check(${task.id})"></i></td>
+        <td class="eliminar"><i class="fa-solid fa-x" id="iconox" onclick="borrar(${task.id})"></i></td>
         </tr>
         `;
     };
@@ -50,8 +50,8 @@ function renderList() {
             <tr class="list">
             <td class="identif">${task.id}</td>
             <td class="descr">${task.name}</td>
-                <td class="realiz"><i class="fa-regular fa-square-check" onclick="check(${task.id})"></i></td>
-                <td class="eliminar"><i class="fa-solid fa-x" onclick="borrar(${task.id})"></i></td>
+                <td class="realiz"><i class="fa-regular fa-square-check" id="boxx" onclick="check(${task.id})"></i></td>
+                <td class="eliminar"><i class="fa-solid fa-x" id="iconox" onclick="borrar(${task.id})"></i></td>
             </tr>
         
         `;

@@ -16,6 +16,7 @@ body {
 
 header {
     color: #87D1FF;
+    -webkit-text-stroke: 0.3px black;
 }
 
 hr {
@@ -86,7 +87,7 @@ button {
     position: relative;
     overflow: hidden;
     height: 40px;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     border-radius: 1.5rem;
     background: #A67026;
     background-size: 400%;
@@ -102,6 +103,8 @@ button:hover::before {
     position: relative;
     z-index: 1;
     font-weight: bolder;
+    -webkit-text-stroke: 0.3px black;
+    font-size: 15px;
 }
 
 button::before {
@@ -124,6 +127,7 @@ button::before {
     margin: 20px 0 20px 0;
     text-align: center;
     color: #F2B968;
+    -webkit-text-stroke: 0.3px black;
 }
 
 .main {
@@ -140,11 +144,15 @@ button::before {
     align-items: center;
     gap: 5px;
     color: #20445B;
-    border-radius: 10px;
+    background-image: url(../img/postit.png);
+    background-size: cover;
+    /* border-radius: 10px;
     background: linear-gradient(145deg, #6fcaff, #5eaada);
     box-shadow: 7px 7px 14px #2a4c61,
-        -7px -7px 14px #a6ffff;
-    padding: 10px;
+        -7px -7px 14px #a6ffff; */
+    padding: 90px 30px;
+    width: 280px;
+    height: 300px;
 }
 
 .listasDin {
@@ -159,10 +167,23 @@ button::before {
 #pending {
     font-family: 'Nanum Brush Script', cursive;
     font-size: 25px;
+    font-weight: bold;
 }
 
 #ready {
     font-family: 'Nanum Brush Script', cursive;
     font-size: 25px;
     text-decoration: line-through;
+}
+
+#iconox {
+    color: red;
+    -webkit-text-stroke: 0.3px black;
+    cursor: pointer;
+}
+
+#boxx {
+    color: green;
+    -webkit-text-stroke: 0.3px black;
+    cursor: pointer;
 }
