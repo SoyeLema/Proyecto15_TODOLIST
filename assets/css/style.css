@@ -150,7 +150,7 @@ button::before {
 .listasDin {
     display: flex;
     flex-direction: column;
-    background-image: url(assets/img/hoja.png);
+    background-image: url(../img/hoja.png);
     background-size: cover;
     padding: 10px 30px 30px 90px;
 
