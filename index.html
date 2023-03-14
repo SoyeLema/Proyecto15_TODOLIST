@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>TO DO LIST</h1>
+        <hr>
+    </header>
+
+    <!-- FORMULARIO -->
+    <h3 class="nuevatarea">Ingresa aquí una nueva tarea</h3>
+    <form id="form">
+        <input type="text" id="newTask" placeholder="Ingresa una nueva tarea a la lista" />
+        <button type="submit"><span class="button-content">Agregar</span></button>
+    </form>
+    <div class="main">
+        <div class="calculos">
+            <!-- TOTAL TAREAS-->
+            <h4>Tareas Totales: <span id="total"></span></h4>
+            <!-- TOTAL TAREAS PENDIENTES -->
+            <h4>Tareas pendientes: <span id="tpending"></span></h4>
+            <!-- TOTAL REALIZADAS -->
+            <h4>Tareas realizadas: <span id="done"></span></h4>
+        </div>
+
+        <!-- FILA INICIAL PARA LISTA DE TAREAS DENTRO DE TABLA -->
+        <div class="listasDin">
+            <table>
+                <tr class="titulotabla">
+                    <td>ID</td>
+                    <td>TAREA</td>
+                    <td>OK?</td>
+                    <td>ELIMINAR</td>
+                </tr>
+            </table>
+
+            <!-- LISTA DINAMICA "PENDIENTES"-->
+            <table id="pending"></table>
+
+            <!-- LISTA DINAMICA "REALIZADAS" -->
+            <table id="ready"></table>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/9667ce28d2.js" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

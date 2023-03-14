@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+
+* {
+    /* font-family: 'Nanum Brush Script', cursive; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #20445B;
+    font-family: 'Amaranth', sans-serif;
+}
+
+header {
+    color: #87D1FF;
+}
+
+hr {
+    background-color: #A67026;
+    height: 5px;
+}
+
+.tareas {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+    align-items: center;
+}
+
+.titulotabla {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+    align-items: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+table {
+    display: flex;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #224961, #1d3d52);
+    box-shadow: 32px 32px 56px #0d1b24,
+        -32px -32px 56px #336d92;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+}
+
+#newTask {
+    width: 50%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #A67026;
+    background-size: 400%;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover::before {
+    transform: scaleX(1);
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+    font-weight: bolder;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(82.3deg,
+            #F2B968 10.8%,
+            #A67026 94.3%);
+    transition: all 0.475s;
+}
+
+.nuevatarea {
+    margin: 20px 0 20px 0;
+    text-align: center;
+    color: #F2B968;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 100px 50px 100px;
+
+}
+
+.calculos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    color: #20445B;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #6fcaff, #5eaada);
+    box-shadow: 7px 7px 14px #2a4c61,
+        -7px -7px 14px #a6ffff;
+    padding: 10px;
+}
+
+.listasDin {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/img/hoja.png);
+    background-size: cover;
+    padding: 10px 30px 30px 90px;
+
+}
+
+#pending {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 25px;
+}
+
+#ready {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 25px;
+    text-decoration: line-through;
+}
